@@ -1,7 +1,6 @@
 # cr10v2_klipper
 ## cr10v2 profil klipper 
-Ce repo contient actuellement la configuration d'une imprimante.
-
+Ce repo contient actuellement la configuration de ma Creality CR10-V2
 ## Variable d'environment
 Le script de mise à jour utilise une variable d'environnement afin de déterminer de quelle imprimante il s'agit (développement futur pour plusieurs imprimantes). Pour cela, la variable est nommée PRINTER_NAME et doit correspondre au nom du dossier dans le repo, actuellement:
 - cr10v2
