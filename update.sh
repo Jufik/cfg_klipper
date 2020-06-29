@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Faire eune sauvegarde de printer.cfg
+# Faire une sauvegarde de printer.cfg
 echo "Sauvegarde de printer.cfg en printer.backup..." 
 mv ~/printer.cfg ~/printer.backup
 
