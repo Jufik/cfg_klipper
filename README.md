@@ -5,7 +5,7 @@ Ce repo contient actuellement la configuration de ma Creality CR10-V2
 Le script de mise à jour utilise une variable d'environnement afin de déterminer de quelle imprimante il s'agit (développement futur pour plusieurs imprimantes). Pour cela, la variable est nommée PRINTER_NAME et doit correspondre au nom du dossier dans le repo, actuellement:
 - cr10v2
 
-L'ajout d'une variable d'environnement est aussi facile que d'accéder au RPI via ssh, ouvrir le fichier bashrc via `nano ~/.bashrc`, aller à la fin de ce fichier et ajouter cette variable (par exemple `export PRINTER_NAME=cr10v2`). Après sauvegarde du fichier bashrc, le sourcer `source ~/.bashrc`, vérifier via `echo $PRINTER_NAME` qui doit retourner le nom précédemment saisi.
+L'ajout d'une variable d'environnement n'est pas plus compliqué que d'accéder au RPI via ssh, ouvrir le fichier bashrc via `nano ~/.bashrc`, aller à la fin de ce fichier et ajouter cette variable (par exemple `export PRINTER_NAME=cr10v2`). Après sauvegarde du fichier bashrc, le sourcer `source ~/.bashrc`, vérifier via `echo $PRINTER_NAME` qui doit retourner le nom précédemment saisi.
 
 ## Mises à jour:
 - ajout du bltouch
@@ -16,6 +16,3 @@ L'ajout d'une variable d'environnement est aussi facile que d'accéder au RPI vi
 - ajout de nouvelles macros 
 
 
-## Maj Klipper / dwc2 
-Pour mettre à jour klipper / dwc2 utiliser le script de manu7irl récupérable ici :
-https://github.com/manu7irl/klipper-DWC2-installer
