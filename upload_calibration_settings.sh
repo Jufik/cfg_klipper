@@ -9,23 +9,14 @@ echo "Préparation des fichiers à envoyer"
 for i in $(cat conf_files.txt)
 do
     cp -v  ~/$i ~/cfg_klipper/$PRINTER_NAME/$i
+	git add $PRINTER_NAME/$i
 done
 
 # Fichiers génériques
 for i in $(cat conf_generic.txt)
 do
     cp -v  ~/$i ~/cfg_klipper/generic/$i
-done
-
-echo "Ajout à git"
-for i in $(cat conf_files.txt)
-do
-    git add $PRINTER_NAME/$i
-done
-
-for i in $(cat conf_generic.txt)
-do
-    git add generic/$i
+	git add generic/$i	
 done
 
 git commit -m "Téléversement des fichiers de configuration" 
