@@ -1,6 +1,6 @@
 #!/bin/bash
 old_IFS=$IFS
-IFS=$' '
+#IFS=$' '
 
 echo "Téléversement du RPI vers github..." 
 
