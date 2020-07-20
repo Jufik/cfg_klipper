@@ -21,3 +21,15 @@ Avant d'utiliser les scripts (update.sh et upload_calibration_settings.sh), effe
 - Modifier ces deux scripts pour qu'ils soient exécutables ( chmod +x up*.sh)
 - Modifier ensuite dans le fichier update.sh mon dépôt par le vôtre.
 - Compléter à votre guise la liste des fichiers de configuration en fonction de votre matériel et de vos préférences.
+
+## On résume:
+Récupération du dépôt
+```
+cd ~
+git clone https://github.com/fran6p/cfg_klipper
+cd ~/cfg_klipper
+chmod +x up*.sh
+./update.sh
+```
+
+«Que le filament coule à flot» FP
