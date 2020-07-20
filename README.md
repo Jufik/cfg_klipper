@@ -18,6 +18,6 @@ L'ajout d'une variable d'environnement n'est pas plus compliqué que d'accéder 
 
 ## Mise en garde:
 Avant d'utiliser les scripts (update.sh et upload_calibration_settings.sh), effectuer un fork de ce dépôt.
-Modifier ces deux scripts pour qu'ils soient exécutables ( chmod +x up*.sh)
-Modifier ensuite dans le fichier update.sh mon dépôt par le vôtre.
-Compléter à votre guise la liste des fichiers de configuration en fonction de votre matériel et de vos préférences.
+- Modifier ces deux scripts pour qu'ils soient exécutables ( chmod +x up*.sh)
+- Modifier ensuite dans le fichier update.sh mon dépôt par le vôtre.
+- Compléter à votre guise la liste des fichiers de configuration en fonction de votre matériel et de vos préférences.
