@@ -7,8 +7,9 @@ Le script de mise à jour utilise une variable d'environnement afin de détermin
 
 Ajouter une variable d'environnement n'est pas compliqué:
 - ouvrir le fichier bashrc via `nano ~/.bashrc`,
-- aller à la fin de ce fichier et ajouter cette variable (par exemple `export PRINTER_NAME=cr10v2`).
-- après sauvegarde du fichier bashrc, le sourcer `source ~/.bashrc` (ou plus rapide: `. ~/.bashrc`),
+- aller à la fin de ce fichier et ajouter cette variable la ligne: `export PRINTER_NAME=cr10v2`
+- sauvegarder le fichier bashrc (CTRL+O, CTRL+X),
+- le sourcer `source ~/.bashrc` (ou plus rapide: `. ~/.bashrc`),
 - vérifier que tout fonctionne correctement via `echo $PRINTER_NAME` qui doit retourner le nom précédemment saisi.
 
 ## Mises à jour:
