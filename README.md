@@ -3,7 +3,7 @@
 Ce repo contient actuellement la configuration de ma Creality CR10-V2 fonctionnant avec le firmware [Klipper](https://github.com/KevinOConnor/klipper)
 
 ## Variable d'environment
-Le script de mise à jour utilise une variable d'environnement afin de déterminer de quelle imprimante il s'agit (développement futur pour plusieurs imprimantes). Pour cela, la variable est nommée PRINTER_NAME et doit correspondre au nom du dossier dans le repo, actuellement: **_cr10v2_**
+Le script de mise à jour utilise une variable d'environnement afin de déterminer de quelle imprimante il s'agit (développement futur pour plusieurs imprimantes). Pour cela, la variable est nommée PRINTER_NAME et doit correspondre au nom du dossier dans le dépôt, actuellement: **_cr10v2_**
 
 Ajouter une variable d'environnement n'est pas compliqué:
 - ouvrir le fichier bashrc via `nano ~/.bashrc`,
@@ -15,10 +15,11 @@ Ajouter une variable d'environnement n'est pas compliqué:
 ## Mises à jour:
 - ajout du bltouch
 - configuration de bed mesh level
-- maj calibration estep (extrudeur pseudo BMG sans réduction)
+- maj calibration estep (extrudeur BMG avec réduction 3:1), montage de l'extrudeur en mode «volant» (mixte entre bowden et direct-drive, le PTFE ne mesure plus que 20 cm) 
 - séparation du fichier de configuration monolithique en plusieurs fichiers inclus via la directive «**include**» (printer.cfg)
 - organisation en sous-dossiers 
 - ajout de nouvelles macros (macros.cfg)
+- réduction de la rétraction avec l'extrudeur volant (PTFE plus court)
 - README peaufiné
 
 ## On résume:
@@ -27,7 +28,7 @@ Récupérer le dépôt:
 cd ~
 git clone https://github.com/fran6p/cfg_klipper
 ```
-Seul le script `update.sh` est directement utilisable après l'avoir rendu exécutable. Le second script me permet de faire des modifications localement sur le Pi et renvoyer ensuite celles-ci sur mon dépôt. Vous devrez donc y effectuer quelques modifications si vous voulez l'utiliser avec votre propre dépôt ;-) 
+Seul le script `update.sh` est directement utilisable après l'avoir rendu exécutable. Le second script me permet de faire des modifications localement sur le Pi et d'envoyer ensuite celles-ci sur mon dépôt. Vous devrez donc y effectuer quelques modifications si vous voulez l'utiliser avec votre propre dépôt ;-) 
 
 Rendre exécutables les scripts (.sh):
 ```
