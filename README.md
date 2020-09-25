@@ -1,11 +1,11 @@
 # cr10v2_klipper
 ## cr10v2 profil klipper 
-Ce repo contient actuellement la configuration de ma Creality CR10-V2 fonctionnant avec le firmware [Klipper](https://github.com/KevinOConnor/klipper)
+Ce dépôt contient la configuration de ma Creality CR10-V2 fonctionnant avec le firmware [Klipper](https://github.com/KevinOConnor/klipper)
 
 ## Variable d'environment
-Le script de mise à jour utilise une variable d'environnement afin de déterminer de quelle imprimante il s'agit (développement futur pour plusieurs imprimantes). Pour cela, la variable est nommée PRINTER_NAME et doit correspondre au nom du dossier dans le dépôt, actuellement: **_cr10v2_**
+Le script de mise à jour fait usage d'une variable d'environnement afin de déterminer de quelle imprimante il s'agit (développement envisagé pour la gestion de plusieurs imprimantes). Pour cela, la variable utilisée se nomme PRINTER_NAME, son contenu doit correspondre au nom du dossier dans le dépôt, actuellement: **_cr10v2_**
 
-Ajouter une variable d'environnement n'est pas compliqué:
+L'ajout d'une variable d'environnement n'est pas compliqué:
 - ouvrir le fichier bashrc via `nano ~/.bashrc`,
 - aller à la fin de ce fichier et ajouter la ligne suivante: `export PRINTER_NAME=cr10v2`
 - sauvegarder le fichier bashrc (CTRL+O, CTRL+X),
@@ -28,7 +28,7 @@ Récupérer le dépôt:
 cd ~
 git clone https://github.com/fran6p/cfg_klipper
 ```
-Seul le script `update.sh` est directement utilisable après l'avoir rendu exécutable. Le second script me permet de faire des modifications localement sur le Pi et d'envoyer ensuite celles-ci sur mon dépôt. Vous devrez donc y effectuer quelques modifications si vous voulez l'utiliser avec votre propre dépôt ;-) 
+Seul le script `update.sh` est directement utilisable après l'avoir rendu exécutable. Le second script me permet de faire des modifications localement sur le Pi et de remonter ensuite celles-ci sur mon dépôt. Si vous envisagiez de l'utiliser. vous devrez y effectuer quelques modifications (a minima le lien vers votre propre dépôt Github) si vous voulez l'utiliser ;-) 
 
 Rendre exécutables les scripts (.sh):
 ```
