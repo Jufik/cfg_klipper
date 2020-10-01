@@ -2,4 +2,4 @@ printer.cfg
 cr10v2_mb252.cfg
 bltouch.cfg
 calibration.cfg
-scurve.cfg
+input_shaper.cfg
