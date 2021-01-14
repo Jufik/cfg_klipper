@@ -21,6 +21,7 @@ L'ajout d'une variable d'environnement n'est pas compliqué:
 - ajout de nouvelles macros (macros.cfg)
 - réduction de la rétraction avec l'extrudeur volant (PTFE plus court)
 - README peaufiné
+- modification M701, M702 : la vitesse de retrait / insertion était trop rapide (100mm/s), maintenant de 35mm/s
 
 ## On résume:
 Récupérer le dépôt:
